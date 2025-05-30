@@ -89,7 +89,7 @@ class _ExtraScreenState extends State<ExtraScreen> {
       onTapUp: (_) => setState(() => _isPressedBack = false),
       onTapCancel: () => setState(() => _isPressedBack = false),
       borderRadius: BorderRadius.circular(25),
-      splashColor: Colors.purple.withValues(_splashOpacity),
+      splashColor: Colors.purple.withValues(opacity: _splashOpacity),
       child: Transform.scale(
         scale: _isPressedBack ? _backButtonScale : 1.0,
         child: Material(
@@ -140,7 +140,7 @@ class _ExtraScreenState extends State<ExtraScreen> {
             child: ColorFiltered(
               colorFilter: (isHovered || isPressed)
                   ? ColorFilter.mode(
-                      Colors.white.withValues(0.3),
+                      Colors.white.withValues(opacity: 0.3),
                       BlendMode.lighten,
                     )
                   : const ColorFilter.mode(
