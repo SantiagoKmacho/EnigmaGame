@@ -26,7 +26,7 @@ jobs:
       
 
       - name: Run flutter analyze
-        run: flutter run
+        run: flutter analyze
 
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v5
