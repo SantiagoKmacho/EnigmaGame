@@ -19,11 +19,11 @@ jobs:
         with:
           flutter-version: '3.32.1'
 
+      - name: Error
+        run: flutter pub outdated
       - name: Run flutter analyze
         run: flutter analyze
 
-      - name: SonarQube Scan
-        run: SonarSource/sonarqube-scan-action@v1.0.0
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v5
         env:
