@@ -19,8 +19,9 @@ jobs:
         with:
           flutter-version: '3.32.1'
 
-      - name: Error
+      - name: flutter pub outdated
         run: flutter pub outdated
+
       - name: Run flutter analyze
         run: flutter analyze
 
