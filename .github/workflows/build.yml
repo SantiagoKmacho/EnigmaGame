@@ -14,8 +14,6 @@ jobs:
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
       # The analysis requires to retrieve dependencies and build successfully
-      - uses: action/checkout@v4
-      
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
