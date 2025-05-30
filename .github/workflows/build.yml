@@ -1,0 +1,29 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+      types: [opened, synchronize, reopened]
+jobs:
+  sonarqube:
+    runs-on: ubuntu-lantest
+
+    steps:
+     - uses: action/checkout@v4
+
+     - name: Set up Flutter
+       uses: subosito/flutter-action@v2
+       with:
+         flutter-version: '3.32.1'
+
+     - name: Run flutter analyze
+       run: flutter analyze
+
+     - name: SonarQube Scan
+       run: SonarSource/sonarqube-scan-action@v1.0.0
+       env:
+         SONAR_TOKEN: ${{ secret.SONAR_TOKEN }}
+         SONAR_HOST_URL: 'https://sonarcloud.io/'
+
