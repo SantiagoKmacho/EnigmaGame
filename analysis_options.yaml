@@ -1,0 +1,15 @@
+# Este archivo configura el analizador para verificar errores, advertencias y lints.
+
+# Activa un conjunto de lints recomendados para aplicaciones Flutter.
+
+linter:
+  # Reglas personalizadas para este proyecto.
+  rules:
+    avoid_print: true # Evita el uso de print en el código
+    prefer_const_constructors: true # Prefiere constructores constantes
+    prefer_const_literals_to_create_immutables: true # Prefiere literales constantes
+    always_declare_return_types: true # Siempre declara tipos de retorno
+    annotate_overrides: true # Anota métodos sobrescritos con @override
+    avoid_unnecessary_containers: true # Evita contenedores innecesarios
+    prefer_final_fields: true # Prefiere campos finales
+    use_key_in_widget_constructors: true # Usa la clave en constructores de widgets

@@ -1,0 +1,69 @@
+name: enigma_game
+description: A new Flutter project.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  rive: ^0.13.20
+  audioplayers: ^6.4.0
+  shared_preferences: ^2.5.3
+  http: ^1.4.0
+  uuid: ^4.5.1
+  file_picker: ^10.1.9
+  flutter_launcher_icons: ^0.14.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  leak_tracker_flutter_testing: ^3.0.9
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/LogoApp.png" # Imagen actualizada para todas las plataformas
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/images/LogoApp.png" # Imagen actualizada
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/images/LogoApp.png" # Imagen actualizada
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/images/LogoApp.png" # Imagen actualizada
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/Barra.png
+    - assets/images/Corona.png
+    - assets/images/Creditos.png
+    - assets/images/diana_sprite.PNG
+    - assets/images/Extra.png
+    - assets/images/Flutter.png
+    - assets/images/Fondo.png
+    - assets/images/Jugar.png
+    - assets/images/Logo.png
+    - assets/images/Logo2.png
+    - assets/images/Luna.png
+    - assets/images/Opciones.png
+    - assets/images/Pausa_sprite.png
+    - assets/images/pixi.png
+    - assets/images/Reanudar_sprite.png
+    - assets/images/Relojito.png
+    - assets/images/X_sprite.png
+    - assets/images/LogoApp.png
+    - assets/animations/llave.riv
+    - assets/audio/background_music.mp3
+
+
+
