@@ -184,7 +184,7 @@ class _JugarScreenState extends State<JugarScreen> {
   }) {
     final color = isSelected
         ? (isCorrect ? Colors.green : Colors.red)
-        : Colors.black.withValues(opacity: 0.5);
+        : Colors.black.withValues(0.5);
 
     return Positioned(
       left: left,
