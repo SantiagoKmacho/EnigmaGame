@@ -184,7 +184,7 @@ class _JugarScreenState extends State<JugarScreen> {
   }) {
     final color = isSelected
         ? (isCorrect ? Colors.green : Colors.red)
-        : Colors.black.withOpacity(0.5);
+        : Colors.black.withValues(0.5);
 
     return Positioned(
       left: left,
@@ -203,7 +203,7 @@ class _JugarScreenState extends State<JugarScreen> {
         onTapUp: (_) => setState(() => _pressedStates[buttonKey] = false),
         onTapCancel: () => setState(() => _pressedStates[buttonKey] = false),
         borderRadius: BorderRadius.circular(8),
-        splashColor: Colors.white.withOpacity(0.3),
+        splashColor: Colors.white.withValues(0.3),
         child: Transform.scale(
           scale: _pressedStates[buttonKey]! ? 0.95 : 1.0,
           child: Container(
@@ -247,7 +247,7 @@ class _JugarScreenState extends State<JugarScreen> {
   /// Construye el contenido del diálogo de pausa
   Widget _buildPauseDialogContent() {
     return AlertDialog(
-      backgroundColor: Colors.black.withOpacity(0.8),
+      backgroundColor: Colors.black.withValues(0.8),
       content: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
@@ -287,7 +287,7 @@ class _JugarScreenState extends State<JugarScreen> {
       onTapUp: (_) => setState(() => _pressedStates[buttonKey] = false),
       onTapCancel: () => setState(() => _pressedStates[buttonKey] = false),
       borderRadius: BorderRadius.circular(10),
-      splashColor: Colors.white.withOpacity(0.3),
+      splashColor: Colors.white.withValues(0.3),
       child: Transform.scale(
         scale: _pressedStates[buttonKey]! ? 0.95 : 1.0,
         child: Image.asset(
@@ -317,7 +317,7 @@ class _JugarScreenState extends State<JugarScreen> {
       context: context,
       barrierDismissible: false,
       builder: (_) => AlertDialog(
-        backgroundColor: Colors.black.withOpacity(0.8),
+        backgroundColor: Colors.black.withValues(0.8),
         title: Text(
           title,
           textAlign: TextAlign.center,
@@ -378,7 +378,7 @@ class _JugarScreenState extends State<JugarScreen> {
       context: context,
       barrierDismissible: false,
       builder: (_) => AlertDialog(
-        backgroundColor: Colors.black.withOpacity(0.85),
+        backgroundColor: Colors.black.withValues(0.85),
         title: const Text(
           '🧠 Reglas del Juego',
           textAlign: TextAlign.center,
@@ -419,7 +419,7 @@ class _JugarScreenState extends State<JugarScreen> {
               onTapCancel: () =>
                   setState(() => _pressedStates['rules'] = false),
               borderRadius: BorderRadius.circular(10),
-              splashColor: Colors.green.withOpacity(0.3),
+              splashColor: Colors.green.withValues(0.3),
               child: Transform.scale(
                 scale: _pressedStates['rules']! ? 0.95 : 1.0,
                 child: Container(
@@ -653,7 +653,7 @@ class _JugarScreenState extends State<JugarScreen> {
                   onTapCancel: () =>
                       setState(() => _pressedStates['pause'] = false),
                   borderRadius: BorderRadius.circular(10),
-                  splashColor: Colors.white.withOpacity(0.3),
+                  splashColor: Colors.white.withValues(0.3),
                   child: Transform.scale(
                     scale: _pressedStates['pause']! ? 0.95 : 1.0,
                     child: Image.asset(
