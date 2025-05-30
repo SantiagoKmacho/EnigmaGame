@@ -173,7 +173,7 @@ class _OpcionesScreenState extends State<OpcionesScreen>
       onTapUp: (_) => setState(() => _isPressed = false),
       onTapCancel: () => setState(() => _isPressed = false),
       borderRadius: BorderRadius.circular(25),
-      splashColor: Colors.purple.withOpacity(0.3),
+      splashColor: Colors.purple.withValues(0.3),
       child: Transform.scale(
         scale: _isPressed ? 0.9 : 1.0,
         child: Material(
