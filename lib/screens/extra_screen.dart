@@ -140,7 +140,7 @@ class _ExtraScreenState extends State<ExtraScreen> {
             child: ColorFiltered(
               colorFilter: (isHovered || isPressed)
                   ? ColorFilter.mode(
-                      Colors.white.withOpacity(0.3),
+                      Colors.white.withOpacity(0),
                       BlendMode.lighten,
                     )
                   : const ColorFilter.mode(
